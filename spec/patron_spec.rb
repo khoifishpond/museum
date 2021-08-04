@@ -18,5 +18,9 @@ describe Patron do
     it 'has spending money' do
       expect(@patron_1.spending_money).to eq(20)
     end
+
+    it 'starts with no interests' do
+      expect(@patron_1.interests).to eq([])
+    end
   end
 end
