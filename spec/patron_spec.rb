@@ -10,5 +10,9 @@ describe Patron do
     it 'exists' do
       expect(@patron_1).to be_a(Patron)
     end
+
+    it 'has a name' do
+      expect(@patron_1.name).to eq("Bob")
+    end
   end
 end
